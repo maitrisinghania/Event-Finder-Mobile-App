@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EventFinder" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+    <style name="Theme.EventFinder.Launcher">
+
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+
+
+
+
+    <style name="Theme.EventFinder" parent="Base.Theme.EventFinder" />
+
+    <style name="Theme.Toggle" parent="Theme.AppCompat.Light">
+        <item name="android:colorForeground">#E5E4E2</item>
+        <item name="colorControlActivated">@color/green</item>
+
+    </style>
+
+
+</resources>

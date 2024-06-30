@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FavouritesFragment"
+    android:id="@+id/favFrame"
+    android:background="@color/white">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noFav"
+        android:text="No favorites available"
+        android:textColor="@color/green"
+        android:background="@drawable/rounded_rectangle"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="15dp"
+        android:paddingVertical="10dp"
+        android:textStyle="bold"
+        android:visibility="gone"></TextView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="20dp">
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_fav"
+            tools:listitem="@layout/recycler_favorite"
+            android:scrollbars="vertical"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="660dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+
+                android:background="@drawable/rounded_rectangle"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/text_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Name"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/text_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Address"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/text_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="City/State"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/text_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Contact Info"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold"></TextView>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:id="@+id/edit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollbars="horizontal"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Artist/Teams"
+
+                            android:textColor="@color/green"
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/edit_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollbars="horizontal"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Venue"
+
+                            android:textColor="@color/green"
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/edit_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollbars="horizontal"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Date"
+
+                            android:textColor="@color/green"
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/edit_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollbars="horizontal"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Time"
+
+                            android:textColor="@color/green"
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.google.android.gms.maps.MapView
+                            android:id="@+id/map_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            map:cameraZoom="12"
+
+                            map:liteMode="true" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="25dp"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#F8DE7E"
+                    android:id="@+id/venue_hours"
+
+                    app:cardCornerRadius="12dp">
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/text_hour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Open Hours"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <at.blogc.android.views.ExpandableTextView
+                            android:id="@+id/edit_hour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+
+                            android:textColor="@color/black"></at.blogc.android.views.ExpandableTextView>
+
+
+                        <TextView
+                            android:id="@+id/text_general"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="General Rules"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+
+                        <at.blogc.android.views.ExpandableTextView
+                            android:id="@+id/edit_general"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem"
+
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            app:animation_duration="750"
+                            android:textColor="@color/black"></at.blogc.android.views.ExpandableTextView>
+
+
+                        <TextView
+                            android:id="@+id/text_child"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Child Rules"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+
+                        <at.blogc.android.views.ExpandableTextView
+                            android:id="@+id/edit_child"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            android:textColor="@color/black"></at.blogc.android.views.ExpandableTextView>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+
+
+</FrameLayout>
