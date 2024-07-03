@@ -52,7 +52,7 @@ class FormFragment : Fragment() {
 
         val location = view?.findViewById<TextView>(R.id.location)
         val queue = Volley.newRequestQueue(context)
-        val url = "https://maps.googleapis.com/maps/api/geocode/json?address=${location?.text?.trim()}&key=AIzaSyCfHzQa-xmj2UmNTTsoPev2CMuAzVHsdTo"
+        val url = "https://maps.googleapis.com/maps/api/geocode/json?address=${location?.text?.trim()}&key=<Your Key>"
 
         Log.d("url for location:", ""+url)
         val jsonObjectRequest = JsonObjectRequest(
